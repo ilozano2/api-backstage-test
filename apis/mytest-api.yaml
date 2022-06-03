@@ -13,8 +13,8 @@ spec:
   definition: |
     openapi: "3.0.0"
     info:
-      version: 1.2.0
-      title: mytest API
+      version: 1.2.1
+      title: mytest API 1.2.1
       license:
         name: MIT
     servers:
