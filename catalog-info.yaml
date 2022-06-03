@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: mytest
+  description: My Test Location
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=mytest'
+    'backstage.io/techdocs-ref': dir:./docs
+spec:
+  targets:
+    - ./apis/pets-api.yaml
