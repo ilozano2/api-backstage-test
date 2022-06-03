@@ -1,1 +1,26 @@
-
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: mytest-api
+  description: Retrieve mytest details
+  annotations:
+  'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=mytest'
+spec:
+  type: openapi
+  lifecycle: production
+  owner: mytest-team
+  system: mytest-topia
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.2.0
+      title: mytest API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /mytest:
+        get:
+          summary: List all mytests
+    groupId: topanga-mytest
