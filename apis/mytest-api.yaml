@@ -13,8 +13,8 @@ spec:
   definition: |
     openapi: "3.0.0"
     info:
-      version: 1.2.1
-      title: mytest API 1.2.1
+      version: 1.2.2
+      title: mytest API 1.2.2
       license:
         name: MIT
     servers:
@@ -22,5 +22,5 @@ spec:
     paths:
       /mytest:
         get:
-          summary: List all mytests
+          summary: List all mytests2 
     groupId: topanga-mytest
