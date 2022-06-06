@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: petclinic
+  description: Pet Component
+  tags:
+    - v1alpha1
+  links:
+    - url: https://google.com
+      title: Troubleshooting
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=mytest'
+    'backstage.io/techdocs-ref': dir:./docs
+spec:
+  type: service
+  lifecycle: production
+  owner: test-team
+  system: test-topia
+  providesApis:
+    - mytest-api
