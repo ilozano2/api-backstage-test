@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: petclinic
-  description: Pet Component
+  name: testcomponnet
+  description: Test Component
   tags:
     - v1alpha1
   links:
